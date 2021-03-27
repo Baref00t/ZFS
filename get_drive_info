@@ -1,0 +1,18 @@
+##############################################
+#          Gets information on disks         #
+#                                            #
+##############################################
+
+sudo hdparm -I /dev/sda | grep "Serial Number"
+sudo hdparm -I /dev/sdb | grep "Serial Number"
+sudo hdparm -I /dev/sdc | grep "Serial Number"
+sudo hdparm -I /dev/sdd | grep "Serial Number"
+sudo hdparm -I /dev/sde | grep "Serial Number"
+sudo hdparm -I /dev/sdf | grep "Serial Number"
+
+sda - WD-WCAW30TVAENA
+sdb - WD-WMATV3965933
+sdc - WD-WCAW37ER7PVR
+sdd - S2R5NXAH351144A
+sde - MK0371YHJURUKG
+sdf - WD-WMATV3965527
