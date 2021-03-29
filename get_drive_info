@@ -10,20 +10,9 @@ sudo hdparm -I /dev/sdd | grep "Serial Number"
 sudo hdparm -I /dev/sde | grep "Serial Number"
 sudo hdparm -I /dev/sdf | grep "Serial Number"
 
-sda - WD-WCAW30TVAENA
-sdb - WD-WMATV3965933
-sdc - WD-WCAW37ER7PVR
-sdd - S2R5NXAH351144A
-sde - MK0371YHJURUKG
-sdf - WD-WMATV3965527
-SDF was SDE
-
-SDA replaced with SDE 
-SDB replaced with SDE2
-SDC being replaced with SDE3
-
-
-
-#sets the expansion NOTE: You only get the space of the smallest disk.
-sudo zpool set autoexpand=on Storage
-# Once all disks are replaced the availible space will expand to the smallest disk. 
+#sda - WD-WCAW30TVAENA
+#sdb - WD-WMATV3965933
+#sdc - WD-WCAW37ER7PVR
+#sdd - S2R5NXAH351144A
+#sde - MK0371YHJURUKG
+#sdf - WD-WMATV3965527

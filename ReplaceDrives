@@ -1,1 +1,26 @@
-zpool replace Storage  olddisk newdisk 
+##############################################
+#       Replacing Drives in ZFS pool         #
+#                                            #
+##############################################
+
+
+sudo zpool replace Storage  olddisk newdisk 
+
+#Monitor resilvering status
+sudo watch -n1 zpool status
+
+
+#sets the expansion NOTE: You only get the space of the smallest disk.
+sudo zpool set autoexpand=on Storage
+# Once all disks are replaced you need to offline each disk to make the expansion happen
+sudo zpool offline Storage sda
+sudo zpool online Storage sda
+
+sudo zpool offline Storage sdb
+sudo zpool online Storage sdb
+
+sudo zpool offline Storage sdc
+sudo zpool online Storage sdc
+
+sudo zpool offline Storage sde
+sudo zpool online Storage sde
