@@ -10,9 +10,3 @@ sudo hdparm -I /dev/sdd | grep "Serial Number"
 sudo hdparm -I /dev/sde | grep "Serial Number"
 sudo hdparm -I /dev/sdf | grep "Serial Number"
 
-# Kraken
-#sda - MK0371YHJURUKG
-#sdb - MK0371YHJMYXLA
-#sdc - MK0371YHKB1S0A
-#sdd - S2R5NXAH351144A
-#sde - MK0371YHHWVB9A
