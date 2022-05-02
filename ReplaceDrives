@@ -3,14 +3,13 @@
 #                                            #
 ##############################################
 
+# Syntax: sudo zpool replace [poolname][olddisk] [newdisk] 
 
-sudo zpool replace Storage  olddisk newdisk 
-
-#Monitor resilvering status
+# Monitor resilvering status
 sudo watch -n1 zpool status
 
 
-#sets the expansion NOTE: You only get the space of the smallest disk.
+# Sets the expansion NOTE: You only get the space of the smallest disk.
 sudo zpool set autoexpand=on Storage
 # Once all disks are replaced you need to offline each disk to make the expansion happen
 sudo zpool offline Storage sda
